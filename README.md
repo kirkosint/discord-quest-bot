@@ -1,100 +1,86 @@
 # Discord Quest Bot
 
-Automate quest completion via console.
-
-**by [@kirkosint](https://github.com/kirkosint)**
-
----
-
-## Usage
-
-### Desktop App (Recommended)
-1. Open Discord desktop app
-2. Press `Ctrl+Shift+I` (Windows/Linux) or `Cmd+Option+I` (Mac)
-3. Click Console tab
-4. Paste `script.js` contents
-5. Press Enter
-
-### Browser (Limited)
-1. Open discord.com in browser
-2. Press `F12` → Console tab
-3. Paste script and hit Enter
-
-**Note:** Desktop gameplay and streaming quests ONLY work in the desktop app.
-
----
-
-## What It Does
-
-- Finds all your active quests
-- Completes them automatically
-- Shows progress in real-time
-- Handles rate limits
-
-**Quest types supported:**
-- Video watching (browser or app)
-- Desktop gameplay (app only)
-- Streaming (app only, needs 1+ viewer)
-- Activities (browser or app)
-
----
-
-## Features
-
-- Auto-detects enrolled quests
-- Skips completed/expired quests
-- Built-in rate limiting
-- Auto-retry on errors
-- Progress bars and completion tracking
-
----
-
-## Desktop App Quests
-
-Some quests require the Discord desktop app:
-
-**PLAY_ON_DESKTOP**
-- Must use desktop app
-- Simulates running the game
-- No viewer required
-
-**STREAM_ON_DESKTOP**
-- Must use desktop app
-- Need at least 1 person watching in voice channel
-- Join VC before running script
-
----
-
-## Troubleshooting
-
-**"No active quests"** → Enroll in quests from Quest Hub first
-
-**"Desktop app required"** → Download from discord.com/download
-
-**"No voice channels"** → Join a VC for activity quests
-
-**Progress stuck on streaming quest** → Make sure someone is watching your stream
-
----
-
-## How It Works
-
-Hooks into Discord's internal webpack to access quest APIs. Sends progress updates at realistic intervals while respecting rate limits.
-
----
-
-## Disclaimer
-
-Uses Discord's internal APIs. Not officially supported. Use at your own risk.
-
-May violate ToS. Could break with Discord updates.
-
----
-
-## License
-
-MIT
-
----
+Auto-complete Discord quests instantly.
 
 **[@kirkosint](https://github.com/kirkosint)**
+
+---
+
+## 🚀 Quick Start
+
+### Enable Developer Mode First
+1. Open Discord Settings (⚙️)
+2. Go to **App Settings** → **Advanced**
+3. Toggle **Developer Mode** ON
+
+### Run The Script
+**Desktop App (Recommended)**
+```
+1. Ctrl+Shift+I (Windows/Linux) or Cmd+Option+I (Mac)
+2. Click "Console" tab
+3. Paste script.js
+4. Press Enter
+```
+
+**Browser**
+```
+1. F12 → Console tab
+2. Paste script.js
+3. Press Enter
+```
+
+---
+
+## ✨ Features
+
+✅ Auto-detects all active quests  
+✅ Completes them sequentially  
+✅ Real-time progress bars  
+✅ Smart rate limiting  
+✅ Auto-retry on errors  
+
+---
+
+## 📋 Quest Types
+
+| Type | Where | Notes |
+|------|-------|-------|
+| 📺 Video | Browser/App | Works everywhere |
+| 🎮 Gameplay | App only | Desktop required |
+| 📡 Streaming | App only | Need 1+ viewer in VC |
+| 🎲 Activities | Browser/App | Works everywhere |
+
+---
+
+## ⚡ Requirements
+
+**All Quests:**
+- Developer Mode enabled
+- Enrolled in quests (Quest Hub)
+
+**Desktop Quests:**
+- Discord desktop app
+- Download: [discord.com/download](https://discord.com/download)
+
+**Streaming Quests:**
+- Desktop app + join voice channel
+- At least 1 person watching
+
+---
+
+## 🔧 Troubleshooting
+
+`No active quests` → Enroll in Quest Hub first  
+`Desktop app required` → Download Discord desktop app  
+`No voice channels` → Join a VC first  
+`Progress stuck` → For streaming, need viewer in VC  
+
+---
+
+## ⚠️ Disclaimer
+
+Uses Discord internal APIs. Not official. Use at your own risk.
+
+---
+
+MIT License • **[@kirkosint](https://github.com/kirkosint)**
